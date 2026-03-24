@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute Selector</title>
+        <style>
+            /* a[href="https://google.com"] {
+                color: red;
+                text-decoration: underline;
+            }
+
+            img[alt="A cute cat"] {
+                border: 1px solid black;
+            }
+
+            input[type="text"] {
+                border: 1px solid gray;
+            } */
+             /* Partial Attribute Selector */
+             /* Contain Keywords, use *= */
+             a[href*="google.com"]{
+                color: red;
+                text-decoration: underline;
+             }
+
+             /* STARTS with keyword use ^= */
+             img[alt^="A cute cat"]{
+                border: 1px solid black;
+             }
+
+             /* Ends with keyword use $= */
+             a[href$="yahoo.com"]{
+                color: yellow;
+             }
+             
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a href="https://google.com">Click Me!</a>
+            <a href="https://yahoo.com">Go to Yahoo!</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8xkz5AM96qhSApwmB9WQ6hrASeAzJTpTCQ3oCPEx5YssGAgOA1Y4Fqm2avqmzmvV7zl3AeXa&s=10" alt="A cute cat" />
+            <input type="text" />
+        </div>
+    </body>
+</html>
