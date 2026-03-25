@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Positioning</title>
+    <!-- It will be fixed on a single area of the screen and overlap any elements or tags behind it. -->
+     <!-- Permanent Item fixed onto the browser screen -->
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            height: 200vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="not-fixed-header">
+        This is NOT a fixed header
+    </div>
+    <div class="header">
+        This is a fixed header
+    </div>
+    </div>
+</body>
+</html>
