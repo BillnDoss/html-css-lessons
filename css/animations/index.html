@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Animation</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                color: white;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .box {
+                margin: 60px auto;
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box:hover {
+                animation-name: changeColor;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes changeColor {
+                from {
+                    background-color: black;
+                }
+                to {
+                    background-color: lightblue;
+                }
+            }
+
+            #my-image {
+                position: absolute;
+                left: 0;
+                top: 100px;
+                animation: move-image;
+                animation-duration: 3s;
+                animation-delay: 1s;
+                /* controls how the animation behaves */
+                animation-timing-function: ease-in-out;
+                /* 
+            linear - the animation has the same speed from start to finish (no difference in the animation)
+            ease - default value, start slow, then fast, end slow
+            ease-in - animation has a slow start
+            ease-out - animation has a slow end
+            ease-in-out - animation has both slow start and end
+            */
+                /* interation = loop/repeat */
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                /* 
+            animation-direction options:
+            - normal - only goes to the right
+            - reverse - only goes to the left
+            - alternate - goes right then left
+            -alternate-reverse - goes right only
+            */
+            }
+            /* more points gives the image a delayed timing for animation  */
+            @keyframes move-image {
+                20% {
+                    left: 0;
+                }
+
+                50% {
+                    left: 50%;
+                }
+
+                100% {
+                    left: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Hover over me</div>
+        <img id="my-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8rpGyEAl2yvIk_gVGxXhOjLWH9Tis3_-SARNgAr3Pl2Qt1vkR1kmeK6A3Kj9mix3lgKFCUQ&s=10" alt="Placeholder Cat" />
+    </body>
+</html>
