@@ -48,7 +48,7 @@ console.log(fruits[1]); // Orange
 console.log(fruits[2]); // Banana
 
 // Objects
-// no order and uses key value pai
+// no order and uses key value pair
 // key: "value"
 
 // const movie = {
@@ -58,9 +58,9 @@ console.log(fruits[2]); // Banana
 //     runningTime: "3h 1m",
 //     storyBy: "Stan Lee, Jack Kirby, Jim Starlin",
 // };
-console.log(movie.name);
-console.log(movie.year);
-console.log(movie.storyBy);
+// console.log(movie.name);
+// console.log(movie.year);
+// console.log(movie.storyBy);
 
 // Arrays are sequential (arranged in order of numbers)
 // Starts from 0
@@ -70,11 +70,39 @@ console.log(movie.storyBy);
 // Objects with Arrays
 // can be converted into arrays by adding square brackets
 // add square brackets behind the constant name and value (position) of the object
-const movie = {
-    name: "Avengers: Endgame",
+// Below is Arrays within an object
+const movie1 = {
+    /*renamed to movie1 */ name: "Avengers: Endgame",
     year: "2019",
     directors: ["Anthony Russo, Joe Russo"],
     runningTime: "3h 1m",
     storyBy: ["Stan Lee, Jack Kirby, Jim Starlin"],
 };
-console.log(movie.directors[0]);
+console.log(movie1.directors[0]);
+
+// Arrays of Objects
+const movie2 = {
+    name: "Up",
+    year: "2009",
+    directors: ["Pete Doctor"],
+    runningTime: "1h 35m",
+    storyby: ["Pete Doctor", "Tom McCarthy", "Bob Peterson"],
+};
+
+const movies = [movie1, movie2];
+console.log(movies);
+console.log(movies[1].storyby[1]); //Tom McCarthy
+
+// Multi-dimensional array (20 Array)
+// What we have learned is 1D Array
+// Its possible to have an array inside an array within this section
+
+const heroes = [
+    ["ironman", "spiderman", "hulk"],
+    ["superman", "batman", "green arrow"],
+    ["Phainon/Khaslana", "Cyrene/Demiurge", "Trailblazer/Deliverer"],
+];
+
+console.log(heroes[0][1]); /* Spider */
+console.log(heroes[1][2]); /* Green Arrow */
+console.log(heroes[2][0]); /* Phainon */

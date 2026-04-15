@@ -12,11 +12,12 @@ console.log("60 / 5");
     This is a multi-line comment
     It can span across many lines
     Just hit enter to go to the next line
-    as long as it is wrapped in /*, it will work.
+    as long as it is wrapped in /*, it will work
 */
 
 // This is a single line comment
 // Use CTRL + / (Windows) OR CMD + / (Mac) for the shortcut
+// Or use //
 
 // Try to comment the code below, put your cursor over the code and hit
 // comment shortcut to instantly comment the code
