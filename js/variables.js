@@ -15,6 +15,12 @@ var lastName = "Yeow";
 console.log(firstName + lastName); //PaulChrisYeow
 console.log(firstName + " " + lastName); //PaulChris Yeow
 
+// only use let when the variable needs to be changed but not re-declared
+let y = 10;
+// let y = 30; // This will cause an error because y has already been declared
+y = 30;
+console.log(y); // Output: 30
+
 /* 
 Pirmitive Data Types
 String: Represent text, e.g: your name
