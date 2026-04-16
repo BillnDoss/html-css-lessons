@@ -1,4 +1,9 @@
 //Assignment Operator
+//let p = 5;
+//p += 2; // same as p = p + 2
+//p -= 3; // same as p = p - 3
+//p *= 12; // same as p = p * 12
+//p /= 8; // same as p = p / 8
 const myVar = 50;
 
 // Comparison Operators
