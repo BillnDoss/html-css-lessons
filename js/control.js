@@ -14,19 +14,20 @@ if (myAge > 18) {
 }
 
 // If-Else If Statement
-const grade = 80
-if(grade >= 90){
-    console.log("Excellent Performance!")
-} else if(grade >= 80){
-    console.log("Good Performance")
-} else if (grade >= 70){
-    console.log("Acceptable Performance")
-} else if (grade >= 60){
-    console.log("Fair Performance")
+// Else If is only used when there's 2 lines of code needed
+const grade = 80;
+if (grade >= 90) {
+    console.log("Excellent Performance!");
+} else if (grade >= 80) {
+    console.log("Good Performance");
+} else if (grade >= 70) {
+    console.log("Acceptable Performance");
+} else if (grade >= 60) {
+    console.log("Fair Performance");
 } else if (grade >= 50) {
-    console.log("Bad Performance")
-}else{
-    console.log("YOU FAILED")
+    console.log("Bad Performance");
+} else {
+    console.log("YOU FAILED");
 }
 
 // if want single quote inside code need to use double quote outside sentence
