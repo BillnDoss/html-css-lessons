@@ -6,6 +6,7 @@ var globalVar = "This is a global variable";
 // Block Scope - Accessible within the 'block' only {}
 // anything inside {} is a scope
 // Let - is a block scope declaration
+// if it was put inside a bracket and a curly bracket was outside it will only function inside the bracket
 // Var - is a function-scope declaration
 
 // Example of Function Scope
