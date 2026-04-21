@@ -32,6 +32,7 @@ buttons.forEach(function (button, i) {
 
     // EventListener
     // unable to add multiple events into a single eventlistener
+    // does not require "=" after the variable for it function
     button.addEventListener("click", function () {
         alert(`Button ${i} was clicked!`);
     });
