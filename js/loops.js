@@ -18,21 +18,21 @@
 // condition is why it stops
 // iteration is increment or decrement
 // (i) is the variables name can be changed
+// if its lesser than
 // increment (0 - 10)
-// if its lesser then
- for (var i = 0; i <= 10; i++) {
+for (var i = 0; i <= 10; i++) {
     console.log(i);
-} 
+}
 
-// decrement (100 - 1)
+// decrement (30 - 1)
 for (var eat = 30; eat >= 1; eat--) {
     console.log("Number of mouthfulls left: " + eat);
-} 
+}
 
 // Simple exercise:
 // Write me a loop that prints the odd number from 1 to 30
 // Combine loop with if
-// % is a moduless gets remainader of what's been divided (division but use the number below instead of above)
+// % is a moduless gets remainder of what's been divided (division but use the number below instead of above)
 // For Loop
 // Good for number based conditions
 // odd numbers use % 2 == 1
