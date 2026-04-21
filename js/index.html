@@ -4,7 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Javascript HTML File</title>
-        <script src="functions.js"></script>
+        <style>
+            .my-class {
+                font-size: 24px;
+                color: red;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <div id="my-element">Inside the div with ID my-element</div>
+        <div class="my-class">Inside the div with class my-class</div>
+        <div class="my-class">Inside ANOTHER div with class my-class</div>
+        <p>This is a paragraph text</p>
+        <!-- Javascript Link needs to be below all HTML elements if doing DOM -->
+        <script src="dom-manipulation.js"></script>
+    </body>
 </html>
