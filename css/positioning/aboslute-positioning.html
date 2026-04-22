@@ -7,6 +7,7 @@
         <!-- Absolute Positioning will stop working if there is no parent/ancestor box with the position: relative; tag it is similiar -->
         <!-- Absolute Positioning will only work IF it has a parent OR ancestor with relative positioning.
       It does not work if the parent or ancestor is not of relative positioning, sice it is relative TO the ancestor's positioning. -->
+        <!-- Allows items to overlap each other rather than not touching it -->
         <style>
             .box {
                 position: relative;
@@ -30,9 +31,7 @@
         <div class="container">
             <div class="box">
                 This is the parent box.
-                <div class="child-box">
-                    This is the child box with absolute positioning.
-                </div>
+                <div class="child-box">This is the child box with absolute positioning.</div>
             </div>
         </div>
     </body>
