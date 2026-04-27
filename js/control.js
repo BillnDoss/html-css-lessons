@@ -1,4 +1,6 @@
 // If-Else Statements
+// If is used when a boolean is set to true
+// Else is used when a boolean is set to false
 const color = "red";
 if (color == "green") {
     console.log("Go");
